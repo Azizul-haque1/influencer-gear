@@ -24,16 +24,28 @@ nav{
     padding-top: 87px;
 }
 
-nav  h2{
+.menu-button{
+    display: none; 
+    font-size: 2rem;
+    color: black;
+}
+
+
+nav ul{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: flex-end;
+}
+
+ul li:nth-child(2){
+    margin-right: auto;
     font-size: 2.5rem;
     font-weight: 700;
 }
 
 
-nav ul{
-    display: flex;
-    gap: 20px;
-}
 
 nav ul li{
     list-style: none;
@@ -43,3 +55,33 @@ nav ul li a{
     text-decoration: none;
     color: black;
 }
+
+
+@media screen and (max-width:576px) {
+
+
+    nav{
+        max-width: 100%;
+    }
+
+    .menu-button{
+        display: block;
+    }
+
+    nav ul{
+        justify-content: space-evenly;
+    }
+
+    .hiddenOnPhone{
+        display: none;
+    }
+    nav {
+        padding: 10px;
+    }
+
+    ul li:nth-child(2){
+        margin-right: 0;
+    }
+    
+}
+
