@@ -173,3 +173,45 @@ nav ul li a{
     
 }
 
+@media screen and (max-width:768px) {
+        nav {
+                max-width: 100%;
+            }
+        
+            .menu-button {
+                display: block;
+            }
+        
+            nav ul {
+                justify-content: space-evenly;
+            }
+        
+            .hiddenOnPhone {
+                display: none;
+            }
+        
+            nav {
+                padding: 10px;
+            }
+        
+            ul li:nth-child(2) {
+                margin-right: 0;
+            }
+        
+        
+            .hero-section {
+                max-width: 100%;
+                flex-direction: column-reverse;
+                text-align: center;
+            }
+        
+            .hero-banner-content h2 {
+                font-size: 3rem;
+                /* margin-top: 10px; */
+        
+            }
+            .hero-banner-image{
+                margin-bottom: 50px;
+            }
+    
+}
