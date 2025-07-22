@@ -124,8 +124,102 @@ nav ul li a{
 }
 
 
+.sponsor-section{
+    max-width: 83%;
+    margin: 0 auto;
+}
+.sponsor-companies img{
+    width:50%;
+    height: 40px;
+}
+
+.sponsor-companies{
+    border-top: 1px solid #3A3A3A10;
+    border-bottom: 1px solid #3A3A3A10;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    gap: 5px;
+    justify-content: center;
+    align-content: center;
+    padding: 50px;
+}
 
 
+/* popular section style */
+
+.popular-section{
+    max-width: 75%;
+    margin: 100px auto;
+    text-align: end;
+
+
+}
+
+.product-container{
+    margin: 0 auto;
+    text-align: start;
+    align-content: center;
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+}
+.popular-section h2{
+    font-size:1.75rem ;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.product-card{
+    align-items: center;
+    align-content: center;
+    /* border: 1px solid black; */
+    padding: 17px 14px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    background: rgb(255, 255, 255);
+}
+
+.product-image{
+    border-radius:5px ;
+}
+.product-title{
+    font-size: 2.75rem;
+}
+.product-card p{
+    color: #787885;
+}
+
+.product-price{
+    font-size: 1.25rem;
+    font-weight:500;
+}
+.rating{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.rating  img{
+    width: 6%;
+
+}
+
+.rating span{
+    margin-left: 5px;
+}
+
+.btn1{
+    color: #E02C6D;
+    font-size: 1rem;
+    background-color: transparent;
+    border: none; 
+    font-weight: 700;
+}
+
+.btn1 i{
+    margin-left: 10px;
+}
 
 /* responsive section  */
 
@@ -167,13 +261,43 @@ nav ul li a{
         
     }
 
+    .sponsor-section{
+        width: 100%;
+    }
+    
+    .sponsor-companies{
+        grid-template-columns: repeat(4, 1fr);
+        border: none;
+        padding: 10px;
+        text-align: center;
+        align-content: center;
+        gap: 10px;
+    }
+
+    .popular-section{
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    .product-container{
+        grid-template-columns: repeat(1, 1fr);
+        align-content: center;
+        width: 100%;
+    }
+    .product-card{
+        width: 100%;
+    }
+
 
 
 
     
 }
 
-@media screen and (max-width:768px) {
+
+
+
+@media screen and (min-width:576px) and (max-width:992px) {
         nav {
                 max-width: 100%;
             }
@@ -213,5 +337,26 @@ nav ul li a{
             .hero-banner-image{
                 margin-bottom: 50px;
             }
-    
+
+        .sponsor-section {
+            width: 100%;
+        }
+
+        .sponsor-companies {
+            grid-template-columns: repeat(4, 1fr);
+            border: none;
+            padding: 10px;
+            text-align: center;
+            gap: 10px;
+        }
+
+
+   .product-container {
+       grid-template-columns: repeat(2, 1fr);
+       align-content: center;
+       width: 100%;
+   }
+
+
+            
 }
